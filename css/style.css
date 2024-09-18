@@ -1,0 +1,110 @@
+:root {
+    --prim: rgb(238, 57, 57);
+    --sec: rgb(248, 129, 175);
+    --mainFont: "Space Grotesk", sans-serif;
+    --grad: linear-gradient(
+        var(--prim), var(--sec)
+    );
+    --grad2: linear-gradient(
+        var(--sec), var(--prim)
+    );
+}
+
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(224, 224, 224);
+}
+
+/* classes */
+
+.banner-image {
+    height: 20vh;
+}
+
+.card-bg {
+    background-color: rgb(184, 77, 77);
+}
+
+.card-h {
+    background-color: var(--prim);
+}
+
+.card-h2 {
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-family: "Gowun Batang", serif;
+}
+
+.card-f {
+    background-color: var(--sec);
+}
+
+.footer-link {
+    color: white;
+}
+
+.footer-link:hover {
+    color: blue;
+}
+
+.header-link {
+    color: white;
+}
+
+
+.header-link:hover {
+    color: rgb(20, 20, 110);
+    border: 1px solid blue;
+    border-radius: 5px;
+}
+
+.foot-h {
+    font-weight: 400;
+    color: rgb(71, 0, 185);
+}
+
+.foot-l {
+    padding: 19px;
+    background-color: rgb(112, 0, 107);
+    background-image: linear-gradient(
+        rgb(112, 0, 107), var(--sec)
+    );
+}
+
+.text {
+    font-family: var(--mainFont);
+}
+
+.shop-cards {
+    margin: 10px;
+}
+
+.promo-image {
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px gray;
+}
+
+/* id */
+
+#footer {
+    background-color: var(--prim);
+    background-image: var(--grad2);
+}
+
+#header {
+    padding: 12px 0;
+    background-color: var(--prim);
+    background-image: var(--grad);
+}
+
+#logo {
+    padding-left: 25px;
+}
+
+#section1 {
+    padding: 10px 0;
+}
