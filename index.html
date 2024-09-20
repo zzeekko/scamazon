@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Scamazon</title>
 </head>
@@ -17,10 +18,10 @@
         <section class="section" id="section1">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-sm-2">
+                    <div class="col-md-2">
                         <h1 class="logo text-capitalize" id="logo">scamazon</h2>
                     </div>
-                    <div class="col-sm-7">
+                    <div class="col-md-5">
                         <form action="#" class="form form-floating">
                             <input 
                                 type="search" 
@@ -31,18 +32,27 @@
                             <label for="searchForm">Search</label>
                         </form>
                     </div>
-                    <div class="col-sm-3">
-                        <nav class="nav justify-content-end" id="headerNav">
-                            <a href="#" class="nav-link header-link">Lorem.</a>
-                            <a href="#" class="nav-link header-link">Perferendis.</a>
-                            <a href="#" class="nav-link header-link">Ad!</a>
+                    <div class="col-md-5">
+                        <nav class="nav justify-content-between justify-content-end" id="headerNav">
+                            <a href="#" class="nav-link header-link">
+                                <i class="bi bi-telephone"></i>
+                                <span class="d-none d-lg-inline">Lorem.</span>
+                            </a>
+                            <a href="#" class="nav-link header-link">
+                                <i class="bi bi-chat-left"></i>
+                                <span class="d-none d-lg-inline">Perferendis.</span>
+                            </a>
+                            <a href="#" class="nav-link header-link">
+                                <i class="bi bi-cart4"></i>
+                                <span class="d-none d-lg-inline">Exercitationem.</span>
+                            </a>
                         </nav>
                     </div>
                 </div>
             </div>
         </section>
         <section class="section" id="section2">
-            <nav class="navbar navbar-expand-lg">
+            <nav class="navbar navbar-expand-xl">
                 <div class="container-fluid">
                     <button
                         class="navbar-toggler"
@@ -117,7 +127,10 @@
                                 class="form-control me-2" 
                                 aria-label="search"
                                 />
-                                <button class="btn btn-outline-light" type="submit">Search</button>
+                                <button class="btn btn-outline-light" type="submit">
+                                    <i class="bi bi-search"></i>
+                                    <span class="visually-hidden">Search</span>
+                                </button>
                         </form>
                     </div>
                 </div>
@@ -128,7 +141,7 @@
         <!-- banner section -->
         <section class="section mb-4" id="bannerSection">
             <div class="container-fluid">
-                <img src="https://via.placeholder.com/50x50" alt="placeholder img" class="img-fluid image banner-image w-100" />
+                <img src="images/dennis_siqueira.jpg" alt="placeholder img" class="img-fluid image banner-image w-100" />
             </div>
         </section>
         <section class="section" id="leadSection">
@@ -138,15 +151,15 @@
                         <div class="card lead-items m-3">
                             <header class="card-header card-h">
                                 <h2 class="display-5 card-h2">Lorem, ipsum.</h2>
-                                <img src="https://via.placeholder.com/50x50" alt="placeholder img" class="img-fluid image card-img" />
+                                <img src="images/falco_masi.jpg" alt="Tennis balls on the floor below someone holding a tennis racket" class="img-fluid image card-img" />
                             </header>
                             <div class="card-body card-bg">
                                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, nam?</p>
                             </div>
                             <footer class="card-footer card-f">
                                 <p class="card-text price">$19.99</p>
-                                <button class="btn btn-primary text-capitalize">add to cart</button>
-                                <button class="btn btn-warning text-capitalize">buy now</button>
+                                <button class="btn btn-primary text-capitalize mb-2">add to cart</button>
+                                <button class="btn btn-warning text-capitalize mb-2"><i class="bi bi-tag"></i>buy now</button>
                             </footer>
                         </div>
                     </div>
@@ -154,15 +167,15 @@
                         <div class="card lead-items m-3">
                             <header class="card-header card-h">
                                 <h2 class="display-5 card-h2">Lorem, ipsum.</h2>
-                                <img src="https://via.placeholder.com/50x50" alt="placeholder img" class="img-fluid image card-img" />
+                                <img src="images/scott_goodwill.jpg" alt="Inside of a tent" class="img-fluid image card-img" />
                             </header>
                             <div class="card-body card-bg">
                                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, nam?</p>
                             </div>
                             <footer class="card-footer card-f">
                                 <p class="card-text price">$19.99</p>
-                                <button class="btn btn-primary text-capitalize">add to cart</button>
-                                <button class="btn btn-warning text-capitalize">buy now</button>
+                                <button class="btn btn-primary text-capitalize mb-2">add to cart</button>
+                                <button class="btn btn-warning text-capitalize mb-2"><i class="bi bi-tag"></i>buy now</button>
                             </footer>
                         </div>
                     </div>
@@ -170,15 +183,15 @@
                         <div class="card lead-items m-3">
                             <header class="card-header card-h">
                                 <h2 class="display-5 card-h2">Lorem, ipsum.</h2>
-                                <img src="https://via.placeholder.com/50x50" alt="placeholder img" class="img-fluid image card-img" />
+                                <img src="images/kelly_sikema.jpg" alt="Shoes and dumbells" class="img-fluid image card-img" />
                             </header>
                             <div class="card-body card-bg">
                                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, nam?</p>
                             </div>
                             <footer class="card-footer card-f">
                                 <p class="card-text price">$19.99</p>
-                                <button class="btn btn-primary text-capitalize">add to cart</button>
-                                <button class="btn btn-warning text-capitalize">buy now</button>
+                                <button class="btn btn-primary text-capitalize mb-2">add to cart</button>
+                                <button class="btn btn-warning text-capitalize mb-2"><i class="bi bi-tag"></i>buy now</button>
                             </footer>
                         </div>
                     </div>
@@ -186,15 +199,15 @@
                         <div class="card lead-items m-3">
                             <header class="card-header card-h">
                                 <h2 class="display-5 card-h2">Lorem, ipsum.</h2>
-                                <img src="https://via.placeholder.com/50x50" alt="placeholder img" class="img-fluid image card-img" />
+                                <img src="images/hans-jurgen_weinhardt.jpg" alt="Many books" class="img-fluid image card-img" />
                             </header>
                             <div class="card-body card-bg">
                                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, nam?</p>
                             </div>
                             <footer class="card-footer card-f">
                                 <p class="card-text price">$19.99</p>
-                                <button class="btn btn-primary text-capitalize">add to cart</button>
-                                <button class="btn btn-warning text-capitalize">buy now</button>
+                                <button class="btn btn-primary text-capitalize mb-2">add to cart</button>
+                                <button class="btn btn-warning text-capitalize mb-2"><i class="bi bi-tag"></i>buy now</button>
                             </footer>
                         </div>
                     </div>
@@ -204,7 +217,7 @@
                     <div class="col-md-6">
                         <div class="item-image-div">
                             <a href="#">
-                                <img src="https://via.placeholder.com/50x50" alt="placeholder img" class="img-fluid w-100 promo-image image" />
+                                <img src="images/jjcotten.jpg" alt="A caracal" class="img-fluid w-100 promo-image image" />
                             </a>
                         </div>
                     </div>
@@ -212,15 +225,15 @@
                         <div class="card lead-items">
                             <header class="card-header card-h">
                                 <h2 class="display-1 card-h2">Lorem, ipsum.</h2>
-                                <img src="https://via.placeholder.com/50x50" alt="placeholder img" class="img-fluid image card-img" />
+                                <img src="images/cdx.jpg" alt="Pair of headphones" class="img-fluid image card-img" />
                             </header>
                             <div class="card-body card-bg">
                                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, nam?</p>
                             </div>
                             <footer class="card-footer card-f">
                                 <p class="card-text price">$19.99</p>
-                                <button class="btn btn-primary text-capitalize">add to cart</button>
-                                <button class="btn btn-warning text-capitalize">buy now</button>
+                                <button class="btn btn-primary text-capitalize mb-2">add to cart</button>
+                                <button class="btn btn-warning text-capitalize mb-2"><i class="bi bi-tag"></i>buy now</button>
                             </footer>
                         </div>
                     </div>
@@ -228,15 +241,15 @@
                         <div class="card lead-items">
                             <header class="card-header card-h">
                                 <h2 class="display-1 card-h2">Lorem, ipsum.</h2>
-                                <img src="https://via.placeholder.com/50x50" alt="placeholder img" class="img-fluid image card-img" />
+                                <img src="images/sincerely_media.jpg" alt="A young woman recording a podcast" class="img-fluid image card-img" />
                             </header>
                             <div class="card-body card-bg">
                                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, nam?</p>
                             </div>
                             <footer class="card-footer card-f">
                                 <p class="card-text price">$19.99</p>
-                                <button class="btn btn-primary text-capitalize">add to cart</button>
-                                <button class="btn btn-warning text-capitalize">buy now</button>
+                                <button class="btn btn-primary text-capitalize mb-2">add to cart</button>
+                                <button class="btn btn-warning text-capitalize mb-2"><i class="bi bi-tag"></i>buy now</button>
                             </footer>
                         </div>
                     </div>
@@ -252,7 +265,7 @@
                     <div class="col-md-2 col-6">
                         <div class="shopping-section-item m-3">
                             <a href="#">
-                                <img src="https://via.placeholder.com/50x50" alt="placeholder img" class="img-fluid image d-block mx-auto" />
+                                <img src="images/aleks-dorohovich--EElZSFXALI-unsplash.jpg" alt="A PS Vita" class="img-fluid image d-block mx-auto" />
                                 
                             </a>
                         </div>
@@ -260,7 +273,7 @@
                     <div class="col-md-2 col-6">
                         <div class="shopping-section-item m-3">
                             <a href="#">
-                                <img src="https://via.placeholder.com/50x50" alt="placeholder img" class="img-fluid image d-block mx-auto" />
+                                <img src="images/daniel-l-hwu_Qo1eWlI-unsplash.jpg" alt="Hair products" class="img-fluid image d-block mx-auto" />
                                 
                             </a>
                         </div>
@@ -268,7 +281,7 @@
                     <div class="col-md-2 col-6">
                         <div class="shopping-section-item m-3">
                             <a href="#">
-                                <img src="https://via.placeholder.com/50x50" alt="placeholder img" class="img-fluid image d-block mx-auto" />
+                                <img src="images/igor-karimov-AGf_KACMHJ8-unsplash.jpg" alt="A PlayStation controller" class="img-fluid image d-block mx-auto" />
                                 
                             </a>
                         </div>
@@ -276,7 +289,7 @@
                     <div class="col-md-2 col-6">
                         <div class="shopping-section-item m-3">
                             <a href="#">
-                                <img src="https://via.placeholder.com/50x50" alt="placeholder img" class="img-fluid image d-block mx-auto" />
+                                <img src="images/sara-kurfess-9Eid2zc_Veo-unsplash.jpg" alt="A USB" class="img-fluid image d-block mx-auto" />
                                 
                             </a>
                         </div>
@@ -284,7 +297,7 @@
                     <div class="col-md-2 col-6">
                         <div class="shopping-section-item m-3 d-none d-md-block">
                             <a href="#">
-                                <img src="https://via.placeholder.com/50x50" alt="placeholder img" class="img-fluid image d-block mx-auto" />
+                                <img src="images/seeetz-gr-4CjBmckI-unsplash.jpg" alt="Numerous belts" class="img-fluid image d-block mx-auto" />
                                 
                             </a>
                         </div>
@@ -292,7 +305,7 @@
                     <div class="col-md-2 col-6">
                         <div class="shopping-section-item m-3 d-none d-md-block">
                             <a href="#">
-                                <img src="https://via.placeholder.com/50x50" alt="placeholder img" class="img-fluid image d-block mx-auto" />
+                                <img src="images/volodymyr-hryshchenko-qkJRmy1aFHY-unsplash.jpg" alt="A woman putting her hair in a ponytail" class="img-fluid image d-block mx-auto" />
                                 
                             </a>
                         </div>
